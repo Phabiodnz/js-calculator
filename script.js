@@ -25,6 +25,3 @@ function typeOnInput(typedNumber) {
     let inputElement = document.getElementById("main-input");
     inputElement.value = inputElement.value + typedNumber;
 }
-
-
-
