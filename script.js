@@ -4,8 +4,8 @@ const multiply = (num1,num2) => num1 * num2;
 const divide = (num1,num2) => num1 / num2;
 
 function operation(){
-    let getInputValue = document.getElementById("main-input").value;
-    let splitInputString = getInputValue.split("");
+    let inputElement = document.getElementById("main-input").value;
+    let splitInputString = inputElement.split("");
     let convertedNumber1 = parseInt(splitInputString[0]);
     let convertedNumber2 = parseInt(splitInputString[2]);
     if(splitInputString[1] == "+"){
@@ -20,3 +20,11 @@ function operation(){
         return false;
     }
 }
+
+function typeOnInput(typedNumber) {
+    let inputElement = document.getElementById("main-input");
+    inputElement.value = inputElement.value + typedNumber;
+}
+
+
+
