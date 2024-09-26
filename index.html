@@ -7,11 +7,12 @@
 </head>
 <body>
     <script src="script.js" defer></script>
+    <h1>SIMPLE JS CALCULATOR</h1>
     <div class="calculator-container">
         <div class="input-container">
             <div>
                 <input type="text" maxlength="3" id="main-input">
-                <button class="number-button" onclick="operation()">=</button>
+                <button class="number-button equals" onclick="showResult()">=</button> 
             </div>
         </div>
         <div class="operation-container">
@@ -26,6 +27,7 @@
                 <button value="2" class="number-button" onclick="typeOnInput('2')">2</button>
                 <button value="1" class="number-button" onclick="typeOnInput('1')">1</button>
                 <button value="0" class="number-button" onclick="typeOnInput('0')">0</button>
+                <button value="0" id="clear-button" onclick="clearInput()">CLEAR</button>
             </div>
             <div class="operators-container">
                 <button value="0" class="number-button" onclick="typeOnInput('+')">+</button>
@@ -35,5 +37,6 @@
             </div>
         </div>
     </div>
+    <h2 id="result"></h2>
 </body>
 </html>
